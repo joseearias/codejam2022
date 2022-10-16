@@ -13,15 +13,15 @@ def test():
 
     for i in range(len(word)):
         # checks if it's not the last character on  the string
-        if i+1 != len(word):
+        if i + 1 != len(word):
             # adds 1 to count if the current character is the
             # same as the next one
-            if word[i] == word[i+1]:
+            if word[i] == word[i + 1]:
                 count += 1
             # appends to the result the current character times 
             # the value in the count variable
             else:
-                if word[i] < word[i+1]:
+                if word[i] < word[i + 1]:
                     result.append(word[i] * count)
                 count = 1
 
