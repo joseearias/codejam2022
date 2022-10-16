@@ -1,9 +1,6 @@
 # By: José Arias
 #
 # Code Jam 2022 - Round 1A Double or One Thing
-# 
-# Time complexity: O(n)
-# Space complexity: O(1)
 
 def test():
     word = input()
@@ -27,18 +24,19 @@ def test():
 
         # appends current character to our result list
         result.append(word[i])
-
     return "".join(result)
 
 
 if __name__ == '__main__':
     result = []
 
+    cases = int(input())
+
     # asks the user for a number of cases and appends the
     # return of each test to our result list
-    for case in range(int(input())):
+    for case in range(cases):
         result.append(test())
 
     # prints the result of each case
-    for case in range(len(result)):
+    for case in range(cases):
         print(f'Case #{case + 1}: {result[case]}')
